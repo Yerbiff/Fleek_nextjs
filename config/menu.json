@@ -1,0 +1,22 @@
+{
+  "main": [
+    {
+      "name": "Oferta",
+      "url": "/oferta"
+    },
+    {
+      "name": "Cennik",
+      "url": "/cennik"
+    }
+  ],
+  "footer": [
+    {
+      "name": "Oferta",
+      "url": "/oferta"
+    },
+    {
+      "name": "Cennik",
+      "url": "/cennik"
+    }
+  ]
+}
