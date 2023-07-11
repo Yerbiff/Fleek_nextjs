@@ -29,6 +29,7 @@ module.exports = {
     "./layouts/**/*.{js,ts,jsx,tsx}",
     "./content/**/*.{md,mdx}",
   ],
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     screens: {
       sm: "540px",
@@ -50,6 +51,7 @@ module.exports = {
         secondary: theme.colors.default.theme_color.secondary,
         body: theme.colors.default.theme_color.body,
         border: theme.colors.default.theme_color.border,
+        trueGray: theme.colors.neutral,
         "theme-light": theme.colors.default.theme_color.theme_light,
         "theme-dark": theme.colors.default.theme_color.theme_dark,
       },

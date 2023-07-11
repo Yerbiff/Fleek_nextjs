@@ -7,6 +7,7 @@ import "styles/style.scss";
 import Footer from "@layouts/partials/Footer";
 import Header from "@layouts/partials/Header";
 import Base from "@layouts/Baseof";
+import { ThemeProvider } from "next-themes";
 
 const App = ({ Component, pageProps }) => {
   // import google font css
@@ -53,9 +54,11 @@ const App = ({ Component, pageProps }) => {
             content="width=device-width, initial-scale=1, maximum-scale=5"
           />
         </Head>
+        <ThemeProvider attribute="class">  
         <Header />
         <Component {...pageProps} />
         <Footer />
+        </ThemeProvider>
       {/* </JsonContext> */}
     </Base>
   );

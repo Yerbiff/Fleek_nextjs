@@ -1,37 +1,59 @@
 import Link from "next/link";
-import heroImg from "../../../public/images/hero-min.webp"
+import heroImg from "../../../public/images/hero.png"
 import Image from "next/image";
+import Container from "../container";
 
 const Hero = () => {
-    return (
-      <div>
-        <div className="container px-5 pt-32 mx-auto lg:px-4 lg:py-4">
-          <div className="flex flex-col w-full mb-2 text-left md:text-center ">
-            <h1 className="mb-2 text-6xl font-bold tracking-tighter text-white lg:text-8xl md:text-7xl">
-                <span>Tworzymy sztuke</span>
-                <br className="hidden lg:block" />
-                 w social mediach
-            </h1>
-            <br />
-            <p className="mx-auto text-xl font-normal leading-relaxed text-gray-600 dark:text-gray-300 lg:w-2/3">
-                ArtEffect to agencja specjalizująca się w tworzeniu unikalnych i atrakcyjnych treści dla mediów społecznościowych. Dowiedz się wiecej o naszej{" "}
-                <Link href="/oferta" className="underline">
-                    Ofercie
-                </Link>{" "}
-                i rozpocznij współprace już dziś
-            </p>
+  return (
+    <>
+      <Container className="flex flex-wrap ">
+        <div className="flex items-center w-full lg:w-1/2">
+          <div className="max-w-2xl mb-8">
+          <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
+            IdeaScape - Wizje stają się rzeczywistością
+          </h1>
+          <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+            Ideascape to agencja marketingu i mediów społecznościowych, która pomaga firmom rozwijać swoją obecność online i skutecznie dotrzeć do swojej grupy docelowej. Dzięki zespołowi ekspertów w strategiach marketingu cyfrowego, budowaniu marki i zarządzaniu mediami społecznościowymi, oferujemy spersonalizowane rozwiązania zarówno dla startupów, jak i dla ugruntowanych firm.
+          </p>
+
+
+            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+              <Link
+                href="/oferta"
+                target="_blank"
+                rel="noopener"
+                className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
+                Zobacz więcej
+              </Link>
+              
+            </div>
           </div>
         </div>
-        <div className="container flex flex-col items-center justify-center py-8 mx-auto rounded-lg md:p-1 p-3">
-          <Image
-            className="object-cover object-center w-full mb-10 border-gray-200 dark:border-gray-900 g327 border rounded-lg shadow-md"
-            alt="hero"
-            src={heroImg}
-          />
+        <div className="flex items-center justify-center w-full lg:w-1/2">
+          <div className="">
+            <Image
+              src={heroImg}
+              width="480"
+              height="476"
+              className={"object-cover"}
+              alt="Hero Illustration"
+              loading="eager"
+            />
+          </div>
         </div>
-      </div>
-    );
-  };
-  
-  export default Hero;
-  
+      </Container>
+      <Container>
+        <div className="flex flex-col justify-center">
+          <div className="text-xl text-center text-gray-700 dark:text-white">
+            Zaufało nam <span className="text-indigo-600">1000+</span>{" "}
+            na całym świecie
+          </div>
+
+          
+        </div>
+      </Container>
+    </>
+  );
+}
+
+export default Hero;

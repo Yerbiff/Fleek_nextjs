@@ -1,6 +1,7 @@
 import Hero from "@layouts/partials/Landing-Page/Hero"
 import Metrics from "@layouts/partials/Landing-Page/Metrics";
-import Featured from "@layouts/partials/Landing-Page/Featured";
+import Benefits from "@layouts/partials/Landing-Page/Benefits";
+import { benefitOne, benefitTwo } from "../layouts/components/data";
 
 const LandingPage = () => {
 
@@ -8,7 +9,8 @@ const LandingPage = () => {
       <section class="text-black body-font lg:pt-20">
         <Hero />
         <Metrics/>
-        <Featured/>
+        {/* <Benefits data={benefitOne} />
+      <Benefits imgPos="right" data={benefitTwo} /> */}
       </section>
   );
 }
