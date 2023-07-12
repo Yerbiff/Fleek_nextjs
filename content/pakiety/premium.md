@@ -1,7 +1,7 @@
 ---
 title: Pakiet Premium
 description: Rozszerzony pakiet dla średnich firm
-price: '1999  zł'
+price: '1999 zł'
 color: 'bg-green-500'
 cechy:
   - Wszystkie funkcje pakietu Basic

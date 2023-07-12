@@ -7,8 +7,8 @@ import {
     SunIcon,
   } from "@heroicons/react/24/solid";
   
-  import benefitOneImg from "../../public/images/benefits_one.png";
-  import benefitTwoImg from "../../public/images/benefits_two.png";
+  import benefitOneImg from "../../public/images/benefits_one.webp";
+  import benefitTwoImg from "../../public/images/benefits_two.webp";
   
   const benefitOne = {
     title: "Wyróżnij się z Ideascape",

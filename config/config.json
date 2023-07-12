@@ -2,8 +2,8 @@
   "site": {
     "title": "Ideascape | Wizje stają się rzeczywistością",
     "base_url": "/",
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo-min.webp",
+    "favicon": "/images/favicon.webp",
+    "logo": "/images/logo.webp",
     "logo_width": "200",
     "logo_height": "124.6",
     "logo_text": "ArtEffect"
@@ -22,7 +22,7 @@
 
   "metadata": {
     "meta_author": "me",
-    "meta_image": "/images/og-image-min.webp",
-    "meta_description": "Odkryj Ideascape - wyjątkowe krajobrazy Twoich mediów społecznościowych. Inspirowane pomysły, które wzbudzą zainteresowanie i podziw. Stwórz unikalne profile, które zostaną zapamiętane!"
+    "meta_image": "/images/og-image.webp",
+    "meta_description": "Odkryj Ideascape - wyjątkowe krajobrazy Twoich mediów społecznościowych. Inspirowane pomysły, które wzbudzą zainteresowanie."
   }
 }
