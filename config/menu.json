@@ -7,6 +7,10 @@
     {
       "name": "Cennik",
       "url": "/cennik"
+    },
+    {
+      "name": "Kontakt",
+      "url": "/kontakt"
     }
   ],
   "footer": [
@@ -17,6 +21,10 @@
     {
       "name": "Cennik",
       "url": "/cennik"
+    },
+    {
+      "name": "Kontakt",
+      "url": "/kontakt"
     }
   ]
 }

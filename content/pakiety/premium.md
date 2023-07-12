@@ -1,11 +1,11 @@
 ---
-title: Premium
-description: Ten pakiet dostarcza zaawansowanych rozwiązań, które pomogą Ci osiągnąć wyższy poziom widoczności i skuteczności w mediach społecznościowych.
-price: '2500zł '
-color: 'bg-yellow-400'
+title: Pakiet Premium
+description: Rozszerzony pakiet dla średnich firm
+price: '1999  zł'
+color: 'bg-green-500'
 cechy:
-- Ekskluzywne kreacje graficzne dopasowane do Twojej marki
-- Zaawansowane zarządzanie społecznościami online
-- Strategiczne kampanie reklamowe dla większego zasięgu
-- Pełna analiza wyników i rekomendacje optymalizacyjne
+  - Wszystkie funkcje pakietu Basic
+  - Zaawansowane narzędzia do zarządzania kampaniami marketingowymi
+  - Integracja z systemami CRM
+  - Dedykowany opiekun klienta
 ---
