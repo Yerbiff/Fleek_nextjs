@@ -1,6 +1,6 @@
 import Hero from "@layouts/partials/Landing-Page/Hero"
 import Metrics from "@layouts/partials/Landing-Page/Metrics";
-import Benefits from "@layouts/partials/Landing-Page/Benefits";
+import Benefits from "@layouts/partials/Offer-Page/Benefits";
 import { benefitOne, benefitTwo } from "../layouts/components/data";
 
 const LandingPage = () => {

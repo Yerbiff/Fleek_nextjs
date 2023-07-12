@@ -3,48 +3,46 @@ import Link from "next/link";
 import Testimonials from "@layouts/partials/Offer-Page/testimonials";
 import Faq from "@layouts/partials/Offer-Page/faq";
 import SectionTitle from "@layouts/partials/sectionTitle";
-import Benefits from "@layouts/partials/Landing-Page/Benefits";
+import Benefits from "@layouts/partials/Offer-Page/Benefits";
 import { benefitOne, benefitTwo } from "../../layouts/components/data";
 
 const Oferta = () => {
   const cities = [
-    { name: 'Wrocław', nameSite: 'Wrocławiu', slug: 'agencja-social-media-wroclaw' },
-    { name: 'Bydgoszcz', nameSite: 'Bydgoszczy', slug: 'agencja-social-media-bydgoszcz' },
-    { name: 'Lublin', nameSite: 'Lublinie', slug: 'agencja-social-media-lublin' },
-    { name: 'Zielona Góra', nameSite: 'Zielonej Górze', slug: 'agencja-social-media-zielona-gora' },
-    { name: 'Łódź', nameSite: 'Łodzi', slug: 'agencja-social-media-lodz' },
-    { name: 'Kraków', nameSite: 'Krakowie', slug: 'agencja-social-media-krakow' },
-    { name: 'Warszawa', nameSite: 'Warszawie', slug: 'agencja-social-media-warszawa' },
-    { name: 'Opole', nameSite: 'Opolu', slug: 'agencja-social-media-opole' },
-    { name: 'Rzeszów', nameSite: 'Rzeszowie', slug: 'agencja-social-media-rzeszow' },
-    { name: 'Białystok', nameSite: 'Białystoku', slug: 'agencja-social-media-bialystok' },
-    { name: 'Gdańsk', nameSite: 'Gdańsku', slug: 'agencja-social-media-gdansk' },
-    { name: 'Katowice', nameSite: 'Katowicach', slug: 'agencja-social-media-katowice' },
-    { name: 'Kielce', nameSite: 'Kielcach', slug: 'agencja-social-media-kielce' },
-    { name: 'Olsztyn', nameSite: 'Olsztynie', slug: 'agencja-social-media-olsztyn' },
-    { name: 'Poznań', nameSite: 'Poznaniu', slug: 'agencja-social-media-poznan' },
-    { name: 'Szczecin', nameSite: 'Szczecinie', slug: 'agencja-social-media-szczecin' },
+    { name: 'Wrocław', nameSite: 'w  Wrocławiu', slug: 'agencja-marketingowa-wroclaw' },
+    { name: 'Bydgoszcz', nameSite: 'w  Bydgoszczy', slug: 'agencja-marketingowa-bydgoszcz' },
+    { name: 'Lublin', nameSite: 'w  Lublinie', slug: 'agencja-marketingowa-lublin' },
+    { name: 'Zielona Góra', nameSite: 'w  Zielonej Górze', slug: 'agencja-marketingowa-zielona-gora' },
+    { name: 'Łódź', nameSite: 'w  Łodzi', slug: 'agencja-marketingowa-lodz' },
+    { name: 'Kraków', nameSite: 'w  Krakowie', slug: 'agencja-marketingowa-krakow' },
+    { name: 'Warszawa', nameSite: 'w  Warszawie', slug: 'agencja-marketingowa-warszawa' },
+    { name: 'Opole', nameSite: 'w  Opolu', slug: 'agencja-marketingowa-opole' },
+    { name: 'Rzeszów', nameSite: 'w  Rzeszowie', slug: 'agencja-marketingowa-rzeszow' },
+    { name: 'Białystok', nameSite: 'w  Białystoku', slug: 'agencja-marketingowa-bialystok' },
+    { name: 'Gdańsk', nameSite: 'w  Gdańsku', slug: 'agencja-marketingowa-gdansk' },
+    { name: 'Katowice', nameSite: 'w  Katowicach', slug: 'agencja-marketingowa-katowice' },
+    { name: 'Kielce', nameSite: 'w  Kielcach', slug: 'agencja-marketingowa-kielce' },
+    { name: 'Olsztyn', nameSite: 'w  Olsztynie', slug: 'agencja-marketingowa-olsztyn' },
+    { name: 'Poznań', nameSite: 'w  Poznaniu', slug: 'agencja-marketingowa-poznan' },
+    { name: 'Szczecin', nameSite: 'w  Szczecinie', slug: 'agencja-marketingowa-szczecin' },
   ];
   return (
     <div>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our customers said">
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
-      </SectionTitle>
+        pretitle="Referencje"
+        title="Oto, co mówią nasi klienci">
+        </SectionTitle>
       <Testimonials/>
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate a
+      <SectionTitle pretitle="FAQ" title="Najczęściej zadawane pytania">
+     
       </SectionTitle>
       <Faq/>
+      <h3 className="mb-4 text-center">Obszar naszych działań</h3>
       <section className="relative">
-          <div className="container">
-            <h3 className="mb-4">Działamy w</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2 mb-5">
+          <div className="container border-t border-gray-100 dark:border-gray-700">
+            {/* <h3 className="mb-4">Obszar naszych działań</h3> */}
+            <div className="grid grid-cols-2 md:grid-cols-4 mt-5 lg:grid-cols-8 gap-2">
               {cities.map((city, index) => (
                 <div key={index}>
                   <h3 className="h7 ">

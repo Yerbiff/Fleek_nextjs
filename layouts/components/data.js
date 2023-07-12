@@ -8,11 +8,11 @@ import {
   } from "@heroicons/react/24/solid";
   
   import benefitOneImg from "../../public/images/benefits_one.png";
-  import benefitTwoImg from "../../public/images/featured-min.webp";
+  import benefitTwoImg from "../../public/images/benefits_two.png";
   
   const benefitOne = {
     title: "Wyróżnij się z Ideascape",
-    desc: "Możesz wykorzystać to miejsce, aby podkreślić korzyści lub cechy swojej firmy, Ideascape. Może także zawierać obraz lub ilustrację, jak w przykładzie, wraz z kilkoma punktami wyliczeniowymi.",
+    desc: "Nasza filozofia opiera się na innowacji, jakości i doskonałej obsłudze klienta. Przywiązujemy ogromną wagę do zrozumienia branży naszych klientów, ich konkurencji i docelowych grup odbiorców. Dzięki temu możemy opracować strategie, które skutecznie przyciągają uwagę, budują zaufanie i generują zwiększone wyniki biznesowe.",
     image: benefitOneImg,
     bullets: [
         {
@@ -34,25 +34,25 @@ import {
   };
   
   const benefitTwo = {
-    title: "Offer more benefits here",
-    desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+    title: "Osiągnij sukces w mediach społecznościowych",
+    desc: "Dzięki możesz osiągnąć sukces i zwiększyć swoją obecność w mediach społecznościowych.",
     image: benefitTwoImg,
     bullets: [
-      {
-        title: "Mobile Responsive Template",
-        desc: "Nextly is designed as a mobile first responsive template.",
+        {
+        title: "Strategia social media",
+        desc: "Ideascape pomoże Ci opracować efektywną strategię social media, dostosowaną do Twojej marki i celów biznesowych.",
         icon: <DevicePhoneMobileIcon />,
-      },
-      {
-        title: "Powered by Next.js & TailwindCSS",
-        desc: "This template is powered by latest technologies and tools.",
+        },
+        {
+        title: "Kreatywne treści",
+        desc: "Nasi eksperci tworzą oryginalne i atrakcyjne treści, które przyciągają uwagę Twojej docelowej grupy odbiorców.",
         icon: <AdjustmentsHorizontalIcon />,
-      },
-      {
-        title: "Dark & Light Mode",
-        desc: "Nextly comes with a zero-config light & dark mode. ",
+        },
+        {
+        title: "Analiza i raportowanie",
+        desc: "Dostarczamy regularne raporty i analizy, abyś mógł śledzić skuteczność swoich działań w mediach społecznościowych.",
         icon: <SunIcon />,
-      },
+        },
     ],
   };
   

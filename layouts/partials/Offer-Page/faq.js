@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../container";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 const Faq = () => {
   return (
@@ -22,6 +23,7 @@ const Faq = () => {
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-gray-500 dark:text-gray-300">
                     {item.answer}
+                    {index === 3 && <Link href="/cennik" className="underline">Cennik</Link>}
                   </Disclosure.Panel>
                 </>
               )}
@@ -34,24 +36,22 @@ const Faq = () => {
 }
 
 const faqdata = [
-  {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
-  },
-  {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
-  },
-  {
-    question: "What is your refund policy? ",
-    answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
-  },
-  {
-    question: "Do you offer technical support? ",
-    answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
-  },
+    {
+    question: "Jakie usługi oferuje agencja marketingowa Ideascape?",
+    answer: "Agencja marketingowa Ideascape oferuje szeroki zakres usług, w tym strategię marketingową, kreację reklam, zarządzanie kampaniami reklamowymi, optymalizację strony internetowej, zarządzanie mediami społecznościowymi i wiele więcej.",
+    },
+    {
+    question: "Czy agencja Ideascape ma doświadczenie w pracy z różnymi branżami?",
+    answer: "Tak, agencja Ideascape ma doświadczenie w pracy z różnymi branżami, w tym e-commerce, usługami B2B, usługami finansowymi, edukacją, zdrowiem i wieloma innymi. Dopasowujemy nasze strategie do specyfiki każdej branży i dostosowujemy się do potrzeb klienta.",
+    },
+    {
+    question: "Jakie są korzyści z zatrudnienia agencji marketingowej?",
+    answer: "Zatrudnienie agencji marketingowej, takiej jak Ideascape, pozwala skorzystać z wiedzy i doświadczenia ekspertów w dziedzinie marketingu. Otrzymujesz dostęp do nowoczesnych narzędzi, kreatywnych pomysłów i profesjonalnej strategii, co przekłada się na skuteczne kampanie marketingowe i zwiększoną widoczność Twojej marki.",
+    },
+    {
+    question: "Jakie są koszty usług agencji marketingowej Ideascape?",
+    answer: "Koszty usług agencji marketingowej Ideascape zależą od zakresu prac i indywidualnych potrzeb klienta. Nasze ceny są konkurencyjne i dostosowane do wartości, jaką dostarczamy. Zapewniamy transparentność kosztów i szczegółową wycenę przed rozpoczęciem projektu. Sprawdź ",
+    },
 ];
 
 export default Faq;

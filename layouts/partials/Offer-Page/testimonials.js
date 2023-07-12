@@ -1,74 +1,52 @@
-import Image from "next/image";
 import React from "react";
 import Container from "../container";
-
-import userOneImg from "../../../public/images/featured-min.webp";
-import userTwoImg from "../../../public/images/featured-min.webp";
-import userThreeImg from "../../../public/images/featured-min.webp";
 
 const Testimonials  = () => {
   return (
     <Container>
-      <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
-        <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-gray-800">
-            <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
-            </p>
+  <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
+    <div className="lg:col-span-2 xl:col-auto">
+      <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-gray-800">
+        <p className="text-2xl leading-normal">
+        Wieloletnia współpraca z Ideascape to kluczowy czynnik naszego sukcesu. Ich umiejętność <Mark>zrozumienia naszej marki</Mark>, docelowych odbiorców i rynku była niezwykle cenna. </p>
+    <Avatar
+      name="Katarzyna Szymańska"
+      title="Dyrektor Marketingu w Nexus Innovations"
+    />
+  </div>
+</div>
+<div className="">
+  <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-gray-800">
+    <p className="text-2xl leading-normal">
+      Wybierając Ideascape jako naszą agencję marketingową, trafiliśmy na prawdziwych <Mark>profesjonalistów</Mark>. Ich kreatywne pomysły i skuteczne strategie przyczyniły się do znacznego wzrostu naszej widoczności i wyników sprzedażowych.
+    </p>
 
-            <Avatar
-              image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
-            />
-          </div>
-        </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-gray-800">
-            <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
-            </p>
+    <Avatar
+      name="Piotr Nowakowski"
+      title="Prezes Zarządu w Nexus Innovations"
+    />
+  </div>
+</div>
+<div className="">
+  <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-gray-800">
+    <p className="text-2xl leading-normal">
+      Ideascape to niezawodny partner w dziedzinie marketingu. Dzięki ich profesjonalizmowi, kreatywności i elastycznemu podejściu, nasza firma zyskała mocną pozycję na rynku i zdobyła <Mark>nowych lojalnych klientów</Mark>.
+    </p>
 
-            <Avatar
-              image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
-            />
-          </div>
-        </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-gray-800">
-            <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve seen. I
-              would use this for anything.
-            </p>
-
-            <Avatar
-              image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
-            />
-          </div>
-        </div>
-      </div>
-    </Container>
+    <Avatar
+      name="Magdalena Kowalczyk"
+      title="Właścicielka Firmy Apex Systems"
+    />
+  </div>
+</div>
+  </div>
+</Container>
   );
 }
 
 function Avatar(props) {
   return (
     <div className="flex items-center mt-8 space-x-3">
-      <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
-        <Image
-          src={props.image}
-          width="40"
-          height="40"
-          alt="Avatar"
-          placeholder="blur"
-        />
-      </div>
       <div>
         <div className="text-lg font-medium">{props.name}</div>
         <div className="text-gray-600 dark:text-gray-400">{props.title}</div>
